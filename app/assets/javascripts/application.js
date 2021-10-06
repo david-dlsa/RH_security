@@ -14,5 +14,4 @@
 //= require turbolinks
 //= require jquery
 //= require cocoon
-//= require popper.js/dist/popper
 //= require bootstrap/dist/js/bootstrap
