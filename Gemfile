@@ -27,8 +27,8 @@ gem 'webpacker'
 gem 'devise'
 gem 'letter_opener'
 gem 'validators', '3.0.2'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-rails_csrf_protection'
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.1"
 
 # frontend
 gem 'bootstrap-sass'
