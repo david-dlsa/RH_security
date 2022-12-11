@@ -1,4 +1,5 @@
 class WelcomesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_welcome, only: %i[ show edit update destroy ]
 
   # GET /welcomes or /welcomes.json

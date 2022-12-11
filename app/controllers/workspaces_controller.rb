@@ -1,4 +1,6 @@
 class WorkspacesController < ApplicationController
+  before_action :authenticate_user!
+  before_action :authenticate_adm?
   before_action :set_workspace, only: %i[ show edit update destroy ]
 
   # GET /workspaces or /workspaces.json

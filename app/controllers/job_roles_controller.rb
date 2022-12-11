@@ -1,4 +1,6 @@
 class JobRolesController < ApplicationController
+  before_action :authenticate_user!
+  before_action :authenticate_adm?
   before_action :set_job_role, only: %i[ show edit update destroy ]
 
   # GET /job_roles or /job_roles.json

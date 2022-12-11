@@ -1,4 +1,6 @@
 class PeopleController < ApplicationController
+  before_action :authenticate_user!
+  before_action :authenticate_adm?
   before_action :set_person, only: %i[ show edit update destroy ]
   before_action :job_role_title, only: %i[index new create edit update]
   before_action :workspace_title, only: %i[index new create edit update]

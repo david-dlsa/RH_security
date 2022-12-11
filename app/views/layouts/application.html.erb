@@ -9,8 +9,17 @@
   </head>
 
   <body>
-    <div class="container" style="margin-top:25px">
-      <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if user_signed_in? %>
+<!--      <a href="/">Home</a>-->
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+    <% else %>
+      <a href="/users/sign_in">Logar</a>
+    <% end %>
+
+    <%= yield %>
     </div>
   </body>
 </html>

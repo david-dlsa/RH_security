@@ -24,6 +24,11 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'binding_of_caller'
 gem 'rails-i18n', '~> 5.1'
 gem 'webpacker'
+gem 'devise'
+gem 'letter_opener'
+gem 'validators', '3.0.2'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 # frontend
 gem 'bootstrap-sass'
